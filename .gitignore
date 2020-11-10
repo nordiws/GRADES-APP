@@ -25,5 +25,5 @@ yarn-error.log*
 .env
 
 Procfile
-
+yarn.lock
 README-REACT.md
