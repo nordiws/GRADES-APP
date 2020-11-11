@@ -11,28 +11,28 @@ function App() {
   return (
     <Router>
       <div>
-        <nav className="navbar navbar-expand navbar-dark bg-dark">
-          <a href="/grade" className="navbar-brand">
-            Aplicativo
+        <nav className='navbar navbar-expand navbar-dark bg-dark'>
+          <a href='/grade' className='navbar-brand'>
+            Home App
           </a>
-          <div className="navbar-nav mr-auto">
-            <li className="nav-item">
-              <Link to={'/grade'} className="nav-link">
+          <div className='navbar-nav mr-auto'>
+            <li className='nav-item'>
+              <Link to={'/grade'} className='nav-link'>
                 Grades
               </Link>
             </li>
-            <li className="nav-item">
-              <Link to={'/add'} className="nav-link">
+            <li className='nav-item'>
+              <Link to={'/add'} className='nav-link'>
                 Add
               </Link>
             </li>
           </div>
         </nav>
-        <div className="container mt-3">
+        <div className='container mt-3'>
           <Switch>
             <Route exact path={['/', '/grade']} component={GradeList} />
-            <Route exact path="/add" component={AddGrade} />
-            <Route path="/grade/:id" component={Grade} />
+            <Route exact path='/add' component={AddGrade} />
+            <Route path='/grade/:id' component={Grade} />
           </Switch>
         </div>
       </div>
