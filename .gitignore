@@ -25,3 +25,5 @@ yarn-error.log*
 .env
 
 Procfile
+
+README-REACT.md
